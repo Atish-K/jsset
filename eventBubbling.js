@@ -29,6 +29,6 @@ function addEvent(el, event, callback, isCapture = false){
         console.log('html');
          });
          addEvent(window, 'click', function (e) {
-        console.log('window');
+        console.log('window');  
          });
     });
