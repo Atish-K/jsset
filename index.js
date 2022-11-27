@@ -1,3 +1,5 @@
+
+// In Capturing Phase, the event starts from the window all the way down to the element that triggered the event
 function addEvent(el, event, callback, isCapture = false){
     if(!el || !event || !callback || typeof callback !== 'function')
     if(typeof el === 'string'){
