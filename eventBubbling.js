@@ -25,7 +25,7 @@ function addEvent(el, event, callback, isCapture = false){
          addEvent(document, 'click', function (e) {
         console.log('document');
          });
-         addEvent('html', 'click', function (e) {
+         addEvent(html, 'click', function (e) {
         console.log('html');
          });
          addEvent(window, 'click', function (e) {
