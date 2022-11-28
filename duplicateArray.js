@@ -11,14 +11,23 @@
 
 // using loop
 
-let language = ['JavaScript', 'Dart', 'Kotlin', 'Java', 'Swift', 'Dart', 'JavaScript'];
-function dups_array(language) {
-   let unique = {};
-   language.forEach(function (i) {
-       if(!unique[i]) {
-          unique[i] = true;
-       }
-   });
-   return Object.keys(unique);
+// let language = ['JavaScript', 'Dart', 'Kotlin', 'Java', 'Swift', 'Dart', 'JavaScript'];
+// function dups_array(language) {
+//    let unique = {};
+//    language.forEach(function (i) {
+//        if(!unique[i]) {
+//           unique[i] = true;
+//        }
+//    });
+//    return Object.keys(unique);
+// }
+// console.log(dups_array(language));
+
+//using set
+
+const set = new Set (['JavaScript', 'Dart', 'Kotlin', 'Java', 'Swift', 'Dart']);
+function uniquearray() {
+   let unique_array = Array.from(set);
+   return unique_array;
 }
-console.log(dups_array(language));
+console.log(uniquearray());
