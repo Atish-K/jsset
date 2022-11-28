@@ -8,3 +8,17 @@ function unique_array(arr) {
    return unique_array
 }
 console.log(unique_array(language));
+
+// using loop
+
+let language = ['JavaScript', 'Dart', 'Kotlin', 'Java', 'Swift', 'Dart', 'JavaScript'];
+function dups_array(language) {
+   let unique = {};
+   langugae.forEach(function (i) {
+       if(!unique[i]) {
+          unique[i] = true;
+       }
+   });
+   return Object.keys(unique);
+}
+console.log(dups_array(language));
