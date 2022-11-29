@@ -62,7 +62,7 @@
      merge(arr,l,m,r);
  }
   
- // UTILITY FUNCTIONS
+
  // Function to print an array
  function printArray( A, size)
  {
